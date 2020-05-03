@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent":"block/iron_trapdoor_open",
+	"textures": {
+		"0": "block/oak_trapdoor",
+		"particle": "block/oak_trapdoor"
+	}
+}

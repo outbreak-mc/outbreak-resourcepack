@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "shape=east_west,powered=false": { "model": "block/rails/activator_rail", "y":90 },
+        "shape=north_south,powered=false": { "model": "block/rails/activator_rail" },
+        "shape=east_west,powered=true": { "model": "block/rails/activator_rail_powered", "y":90 },
+        "shape=north_south,powered=true": { "model": "block/rails/activator_rail_powered" }
+    }
+}

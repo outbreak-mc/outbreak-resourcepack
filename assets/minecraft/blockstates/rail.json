@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "shape=east_west": { "model": "block/rails/rail", "y":90 },
+        "shape=north_south": { "model": "block/rails/rail" }
+    }
+}

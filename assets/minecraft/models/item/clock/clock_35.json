@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "layer0": "item/clock/clock_35"
+    },
+    "parent": "item/clock/clock_parent"
+}

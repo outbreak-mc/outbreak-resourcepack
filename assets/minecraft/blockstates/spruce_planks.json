@@ -1,0 +1,15 @@
+{
+    "variants": {
+        "": [
+            {
+                "model": "block/spruce_planks_0"
+            },
+            {
+                "model": "block/spruce_planks_1"
+            },
+            {
+                "model": "block/spruce_planks_2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "textures": {
+        "0": "block/spruce_planks",
+        "particle": "block/spruce_planks"
+    },
+    "parent": "block/planks/planks_0"
+}
