@@ -2,6 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "./sniper",
+		"1": "block/nether_portal",
 		"particle": "./sniper"
 	},
 	"elements": [
@@ -85,7 +86,7 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [15.51346, 12.88365, 1.47308]},
 			"faces": {
 				"north": {"uv": [6.5, 10.5, 5, 12], "rotation": 180, "texture": "#0"},
-				"east": {"uv": [6.4, 10.75, 0.75, 11.825], "texture": "#0"},
+				"east": {"uv": [0.75, 10.75, 6.4, 11.825], "rotation": 180, "texture": "#0"},
 				"west": {"uv": [6.4, 10.75, 0.75, 11.825], "rotation": 180, "texture": "#0"},
 				"up": {"uv": [6.5, 10.5, 4.5, 12], "rotation": 180, "texture": "#0"},
 				"down": {"uv": [6.5, 10.5, 1, 12], "rotation": 180, "texture": "#0"}
@@ -272,6 +273,33 @@
 				"west": {"uv": [16, 0, 14.625, 2], "rotation": 90, "texture": "#0", "tintindex": 0},
 				"up": {"uv": [14.625, 2, 15.95, 0], "texture": "#0", "tintindex": 0},
 				"down": {"uv": [14.5, 2, 15.95, 0], "rotation": 180, "texture": "#0", "tintindex": 0}
+			}
+		},
+		{
+			"from": [7.25, 7.8, 6.575],
+			"to": [8.775, 8.3, 7.075],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 15.325, 13]},
+			"faces": {
+				"east": {"uv": [5, 4, 6, 5], "texture": "#1"},
+				"west": {"uv": [5, 4, 6, 5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.25, 7.8, 7.575],
+			"to": [8.775, 8.3, 8.075],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 15.325, 14]},
+			"faces": {
+				"east": {"uv": [4, 6, 5, 7], "texture": "#1"},
+				"west": {"uv": [4, 6, 5, 7], "texture": "#1"}
+			}
+		},
+		{
+			"from": [7.25, 7.8, 8.575],
+			"to": [8.775, 8.3, 9.075],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 15.325, 15]},
+			"faces": {
+				"east": {"uv": [4, 7, 5, 8], "texture": "#1"},
+				"west": {"uv": [4, 7, 5, 8], "texture": "#1"}
 			}
 		}
 	],
