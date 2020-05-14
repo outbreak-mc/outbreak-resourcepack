@@ -1,0 +1,6 @@
+{
+    "parent": "block/wooden_pressure_plate_down",
+    "textures": {
+        "texture": "block/dark_oak_planks"
+    }
+}
