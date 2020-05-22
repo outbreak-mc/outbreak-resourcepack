@@ -1,0 +1,124 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "block/rail",
+		"particle": "block/detector_on",
+		"1_0": "block/detector_on"
+	},
+	"elements": [
+		{
+			"name": "voxel",
+			"from": [2, 1, 0.25],
+			"to": [4, 2, 16.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8.25]},
+			"faces": {
+				"north": {"uv": [12, 0, 14, 1], "texture": "#0"},
+				"east": {"uv": [3, 0, 4, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [2, 15, 4, 16], "texture": "#0"},
+				"west": {"uv": [2, 0.375, 3, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [2, 0, 4, 16], "texture": "#0"},
+				"down": {"uv": [12, 0, 14, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "voxel",
+			"from": [12, 1, 0.25],
+			"to": [14, 2, 16.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8.25]},
+			"faces": {
+				"north": {"uv": [2, 0, 4, 1], "texture": "#0"},
+				"east": {"uv": [2, 0, 3, 16], "rotation": 270, "texture": "#0"},
+				"south": {"uv": [12, 0, 14, 1], "texture": "#0"},
+				"west": {"uv": [12, 0, 13, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [12, 0, 14, 16], "texture": "#0"},
+				"down": {"uv": [2, 0, 4, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "voxel",
+			"from": [1, 0, 1],
+			"to": [15, 1, 3],
+			"faces": {
+				"north": {"uv": [4, 2.999, 11.999, 1], "texture": "#0"},
+				"east": {"uv": [10, 2.999, 10.999, 1], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [4, 2.999, 11.998, 1], "texture": "#0"},
+				"west": {"uv": [10, 2.999, 10.999, 1], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [1, 2.999, 14.999, 1], "texture": "#0"},
+				"down": {"uv": [4, 3, 12, 1.001], "texture": "#0"}
+			}
+		},
+		{
+			"name": "voxel",
+			"from": [1, 0, 5],
+			"to": [15, 1, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 12]},
+			"faces": {
+				"north": {"uv": [4, 2.999, 11.999, 1], "texture": "#0"},
+				"east": {"uv": [10, 2.999, 10.999, 1], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [4, 2.999, 11.998, 1], "texture": "#0"},
+				"west": {"uv": [10, 2.999, 10.999, 1], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [1, 2.999, 14.999, 1], "texture": "#0"},
+				"down": {"uv": [4, 3, 12, 1.001], "texture": "#0"}
+			}
+		},
+		{
+			"name": "voxel",
+			"from": [1, 0, 9],
+			"to": [15, 1, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 16]},
+			"faces": {
+				"north": {"uv": [4, 2.999, 11.999, 1], "texture": "#0"},
+				"east": {"uv": [10, 2.999, 10.999, 1], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [4, 2.999, 11.998, 1], "texture": "#0"},
+				"west": {"uv": [10, 2.999, 10.999, 1], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [1, 2.999, 14.999, 1], "texture": "#0"},
+				"down": {"uv": [4, 3, 12, 1.001], "texture": "#0"}
+			}
+		},
+		{
+			"name": "voxel",
+			"from": [1, 0, 13.25],
+			"to": [15, 1, 15.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 20.25]},
+			"faces": {
+				"north": {"uv": [4, 2.999, 11.999, 1], "texture": "#0"},
+				"east": {"uv": [10, 2.999, 10.999, 1], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [4, 2.999, 11.998, 1], "texture": "#0"},
+				"west": {"uv": [10, 2.999, 10.999, 1], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [1, 2.999, 14.999, 1], "texture": "#0"},
+				"down": {"uv": [4, 3, 12, 1.001], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 1, 5.25],
+			"to": [11, 2, 11.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1.5, 8.25]},
+			"faces": {
+				"north": {"uv": [0, 0, 15.999, 2.5], "rotation": 180, "texture": "#1_0"},
+				"east": {"uv": [14, 0, 15.999, 15.999], "rotation": 90, "texture": "#1_0"},
+				"south": {"uv": [0, 13.5, 15.999, 15.999], "texture": "#1_0"},
+				"west": {"uv": [0, 0, 2.5, 15.999], "rotation": 90, "texture": "#1_0"},
+				"up": {"uv": [0, 0, 15.999, 15.999], "texture": "#1_0"},
+				"down": {"uv": [0, 0, 15.999, 15.999], "texture": "#1_0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "powered_rail",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3, 4, 5]
+		},
+		{
+			"name": "detector_rail",
+			"origin": [8, 8, 8],
+			"children": [
+				{
+					"name": "powered_rail",
+					"origin": [8, 8, 8],
+					"children": [6]
+				}
+			]
+		}
+	]
+}

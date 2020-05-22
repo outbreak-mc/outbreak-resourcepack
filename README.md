@@ -4,7 +4,7 @@
 
 ---
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Felucca24/outbreak-resourcepack)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/FeelinVoids/outbreak-resourcepack)
 ![Minecraft version](https://img.shields.io/badge/minecraft--version-1.14%20--%201.15-blue)
 
 Данный ресурспак разрабатывается для моего сервера <здесь будет IP после открытия>.  
@@ -31,12 +31,16 @@
     - [Схема зельеварения вместо одной из картин](#scheme)
     - [Более прозрачная тыква на голове](#pumpkin_head)
     - [3D доски](#planks)
-    - [Компараторы](#comparators)
+    - [Повторители и компараторы](#comparators)
     - [Интерфейс](#interface)
     - [Часы](#clock)
     - [Зачаровальные книги со значками зачарований](#books)
     - [Зелья со значками эффектов](#potions)
     - [Соединяющиеся текстуры](#connections)
+    - [Растительность](#plants)
+    - [Торт](#cake)
+    - [Лёд](#ice)
+
 
 - [Для сервера](#forserver)
     - [3D оружие для плагина CrackShot](#crackshot)
@@ -66,7 +70,8 @@
 ![Лестницы](./sources/screenshots/ladders.png)
 
 ### <a name="rails"></a> Объёмные рельсы
-![Рельсы](./sources/screenshots/rails.png)
+![Рельсы днём](./sources/screenshots/rails_day.png)
+![Рельсы ночью](./sources/screenshots/rails_night.png)
 
 ### <a name="levers"></a> Рычаги со светящимися индикаторами on/off
 ![Рычаги](./sources/screenshots/levers.png)
@@ -90,16 +95,16 @@
 ### <a name="planks"></a> 3D доски
 ![Доски](./sources/screenshots/planks.png)
 
-### <a name="comparators"></a> Компараторы
+### <a name="comparators"></a> Повторители и компараторы
 Позаимствованы из God Of Redstone, который давно не обновляется.
-Добавлено свечение, изменяющееся в зависимости от режима.
-![Компараторы](./sources/screenshots/comparators.png)
+Компаратору добавлено свечение, изменяющееся в зависимости от режима.
+![Повторители и компараторы](./sources/screenshots/comparators.png)
 
 ### <a name="interface"></a> Интерфейс
 Интерфейс инвентаря креатива и хотбар также взяты из God Of Redstone и переработаны
 для нормального отображения в новых версиях. На хотбар добавлены номера для
 более удобного выбора кнопками.
-![Компараторы](./sources/screenshots/interface.png)
+![Интерфейс](./sources/screenshots/interface.png)
 
 ### <a name="clock"></a> Часы
 Кривое отображение поверх сетки инвентаря - норма.
@@ -110,13 +115,32 @@
 ![Книжки](./sources/screenshots/books.png)
 
 ### <a name="potions"></a> Зелья со значками эффектов
-В ресурспаке есть все значки, однако, некоторые не работают. Видимо, не поддерижваются OptiFine.
+В ресурспаке есть все значки, однако, некоторые не работают. Видимо, не поддерживаются OptiFine.
 ![Зелья](./sources/screenshots/potions.png)
 
 ### <a name="connections"></a> Соединяющиеся текстуры
 Соединяющиеся текстуры имеют песок, красный песок, все виды листвы и гравий.
 Соединение песков с разными каменными кирпичами особенное.
-![Зелья](./sources/screenshots/connections.png)
+![Соединяющиеся текстуры](./sources/screenshots/connections.png)
+
+### <a name="plants"></a> Растительность
+Тростник, картофель, морковь, свёкла и ягоды переработаны в 3D.
+Для картофеля и моркови проработаны все 7 стадий (вместо стандартных 4-х)
+![Растительность](./sources/screenshots/foodstuff/plants.png)
+Картофель | Морковь | Свёкла
+--------- | ------- | ------
+![Картофель](./sources/screenshots/foodstuff/potato_grows.gif) | ![Морковь](./sources/screenshots/foodstuff/carrot_grows.gif) | ![Свёкла](./sources/screenshots/foodstuff/beetroot_grows.gif)
+
+### <a name="cake"></a> Торт
+![Торт днём](./sources/screenshots/foodstuff/cake_day.png)
+![Торт ночью](./sources/screenshots/foodstuff/cake_night.png)
+![Поедание торта](./sources/screenshots/foodstuff/cake.gif)
+
+### <a name="ice"></a> Лёд
+Для льда и плотного льда добавлены карты отражений и карты нормалей
+![Лёд](./sources/screenshots/ice.png)
+
+
 
 ## <a name="forserver"></a> Изменения для сервера
 ### <a name="crackshot"></a> 3D оружие для плагина CrackShot
