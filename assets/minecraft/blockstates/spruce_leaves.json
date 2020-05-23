@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "": [
+            {"model": "block/bushy/spruce_leaves"},
+            {"model": "block/bushy/spruce_leaves", "y": 180}
+        ]
+    }
+}
