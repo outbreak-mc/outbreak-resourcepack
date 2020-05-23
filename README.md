@@ -143,11 +143,12 @@
 
 ### <a name="leaves"></a> Пышная листва
 ![Берёзовый лес](./sources/screenshots/bushy/birch.png)
-- | -
-- | -
-![Лес](./sources/screenshots/bushy/forest.png) | ![Меза](./sources/screenshots/bushy/mesa.png)
-![Болото](./sources/screenshots/bushy/swamp.png) | ![Джунгли](./sources/screenshots/bushy/jungle.png)
-![Саванна](./sources/screenshots/bushy/savanna.png) | ![Тайга](./sources/screenshots/bushy/spruce.png)
+![Лес](./sources/screenshots/bushy/forest.png)
+![Меза](./sources/screenshots/bushy/mesa.png)
+![Болото](./sources/screenshots/bushy/swamp.png)
+![Джунгли](./sources/screenshots/bushy/jungle.png)
+![Саванна](./sources/screenshots/bushy/savanna.png)
+![Тайга](./sources/screenshots/bushy/spruce.png)
 
 
 
