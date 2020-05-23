@@ -40,6 +40,7 @@
     - [Растительность](#plants)
     - [Торт](#cake)
     - [Лёд](#ice)
+    - [Пышная листва](#leaves)
 
 
 - [Для сервера](#forserver)
@@ -139,6 +140,17 @@
 ### <a name="ice"></a> Лёд
 Для льда и плотного льда добавлены карты отражений и карты нормалей
 ![Лёд](./sources/screenshots/ice.png)
+
+### <a name="leaves"></a> Пышная листва
+![Берёзовый лес](./sources/screenshots/bushy/birch.png)
+- | -
+- | -
+![Лес](./sources/screenshots/bushy/forest.png) | ![Меза](./sources/screenshots/bushy/mesa.png)
+![Болото](./sources/screenshots/bushy/swamp.png) | ![Джунгли](./sources/screenshots/bushy/jungle.png)
+![Саванна](./sources/screenshots/bushy/savanna.png) | ![Тайга](./sources/screenshots/bushy/spruce.png)
+
+
+
 
 
 
