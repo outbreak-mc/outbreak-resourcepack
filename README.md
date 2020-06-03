@@ -41,7 +41,7 @@
     - [Торт](#cake)
     - [Лёд](#ice)
     - [Пышная листва](#leaves)
-
+    - [Голова дракона](#dragon_head)
 
 - [Для сервера](#forserver)
     - [3D оружие для плагина CrackShot](#crackshot)
@@ -128,6 +128,7 @@
 Тростник, картофель, морковь, свёкла и ягоды переработаны в 3D.
 Для картофеля и моркови проработаны все 7 стадий (вместо стандартных 4-х)
 ![Растительность](./sources/screenshots/foodstuff/plants.png)
+![Адский нарост](./sources/screenshots/foodstuff/nether_wart.png)
 Картофель | Морковь | Свёкла
 --------- | ------- | ------
 ![Картофель](./sources/screenshots/foodstuff/potato_grows.gif) | ![Морковь](./sources/screenshots/foodstuff/carrot_grows.gif) | ![Свёкла](./sources/screenshots/foodstuff/beetroot_grows.gif)
@@ -140,6 +141,10 @@
 ### <a name="ice"></a> Лёд
 Для льда и плотного льда добавлены карты отражений и карты нормалей
 ![Лёд](./sources/screenshots/ice.png)
+
+### <a name="dragon_head"></a> Голова дракона
+Глаза и рот теперь светятся
+![Голова дракона](./sources/screenshots/dragon_head_emission.png)
 
 ### <a name="leaves"></a> Пышная листва
 ![Берёзовый лес](./sources/screenshots/bushy/birch.png)
@@ -171,6 +176,7 @@
 ![riotshield1.png](./sources/screenshots/guns/riotshield1.png) | ![riotshield2.png](./sources/screenshots/guns/riotshield2.png)
 ![sniper1.png](./sources/screenshots/guns/sniper1.png) | ![sniper2.png](./sources/screenshots/guns/sniper2.png)
 ![type951.png](./sources/screenshots/guns/type951.png) | ![type952.png](./sources/screenshots/guns/type952.png)
+![type951.png](./sources/screenshots/guns/energy_sniper1.png) | ![type952.png](./sources/screenshots/guns/energy_sniper2.png)
 
 # <a name="selectors"></a> Распознавание предметов с изменёнными моделями
 
