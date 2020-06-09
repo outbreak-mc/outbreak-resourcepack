@@ -13,11 +13,11 @@ def generate_parallax(img):
     new_data = []
     for px in list(img.getdata()):
         # Проверяем, может быть альфа уже есть
-        if px[3] != 255:
-            print("Parallax already generated.")
-            return None
+        # if px[3] != 255:
+        #     print("Parallax already generated.")
+        #     return None
         px = list(px)
-        px[3] = px[2]
+        px[3] = int(px[2])
         new_data.append(tuple(px))
 
     img.putdata(new_data)
