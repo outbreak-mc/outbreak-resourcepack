@@ -11,13 +11,14 @@ from PIL import Image
 
 def generate_parallax(img):
     new_data = []
+    img = img.convert("RGBA")
     for px in list(img.getdata()):
         # Проверяем, может быть альфа уже есть
         # if px[3] != 255:
         #     print("Parallax already generated.")
         #     return None
         px = list(px)
-        px[3] = int(px[2])
+        px = [px[0], px[1], px[2], px[2]]
         new_data.append(tuple(px))
 
     img.putdata(new_data)
@@ -43,3 +44,5 @@ for fn in os.listdir(dirpath):
             print("Creating a backup of", fn)
             img.save(os.path.join(dirpath, fn))
             print("Generated parallax for", fn)
+
+input("done")
