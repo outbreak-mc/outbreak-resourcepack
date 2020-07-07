@@ -62,6 +62,7 @@ enchantments = {
     "sweeping": 3,
     "thorns": 3,
     "unbreaking": 3,
+    "soul_speed": 3,
 }
 
 level_frames = (
