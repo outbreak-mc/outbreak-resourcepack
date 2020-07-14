@@ -5,12 +5,13 @@
 ---
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/FeelinVoids/outbreak-resourcepack)
-![Minecraft version](https://img.shields.io/badge/minecraft--version-1.14%20--%201.15-blue)
+![Minecraft version](https://img.shields.io/badge/minecraft--version-1.14%20--%201.16-blue)
 
 Данный ресурспак разрабатывается для моего сервера <здесь будет IP после открытия>.  
-Ресурспак протестирован и нормально работает на версиях Minecraft 1.14 - 1.15.  
+Ресурспак протестирован и нормально работает на версиях Minecraft 1.14 - 1.16.  
 
-Для наилучшего игрового опыта рекомендуется использовать [шейдеры BSL](https://www.curseforge.com/minecraft/customization/bsl-shaders).
+В ресурспаке используются карты нормалей/отражений/свечения, использующиеся шейдерами,
+так что для наилучшего игрового опыта рекомендуется использовать [шейдеры BSL](https://bitslablab.com/) или другие.
 
 ### Необходим [OptiFine](http://optifine.net/)!
 ## Последние версии качать [здесь](https://github.com/FeelinVoids/outbreak-resourcepack/releases)
