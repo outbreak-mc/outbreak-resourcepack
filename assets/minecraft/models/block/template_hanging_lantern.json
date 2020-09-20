@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"particle": "block/lantern",
-		"all": "block/lantern"
+		"particle": "#lantern",
+		"all": "#lantern"
 	},
 	"elements": [
 		{
