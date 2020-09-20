@@ -2,7 +2,9 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/orientable",
 	"textures": {
+		"3": "block/campfire_fire",
 		"top": "block/blast_furnace_top",
+		"particle": "block/blast_furnace_front",
 		"front": "block/blast_furnace_front",
 		"side": "block/blast_furnace_side"
 	},
@@ -56,6 +58,14 @@
 			"rotation": {"angle": 0, "axis": "y", "origin": [7.5, 8, 19]},
 			"faces": {
 				"north": {"uv": [1, 1, 15, 15], "texture": "#top"}
+			}
+		},
+		{
+			"from": [3, 2, 3],
+			"to": [13, 12, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10.5, 10, 18]},
+			"faces": {
+				"north": {"uv": [1, 1, 15, 15], "texture": "#3"}
 			}
 		},
 		{
