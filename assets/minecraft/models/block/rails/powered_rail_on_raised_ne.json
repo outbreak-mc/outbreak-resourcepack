@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
 	"textures": {
 		"0": "block/powered_rail_on",
 		"particle": "block/activator_rail_on"
