@@ -11,14 +11,14 @@ from PIL import Image
     Для срабатывания необходимо просто перетащить картинки на скрипт,
     либо запустить и вставить путь.
     
-    Картинки перезаписываются, бэкап делается в папку .pn_backup """
+    Картинки перезаписываются, бэкап делается в папку pn_backup """
 
 
 def normalise_parallax(img_path: str):
     img = Image.open(img_path)
 
     dirname = os.path.dirname(img_path)
-    backup_folder = os.path.join(dirname, ".pn_backup")
+    backup_folder = os.path.join(dirname, "pn_backup")
     basename = os.path.basename(img_path)
 
     # Создаём папку для бэкапа

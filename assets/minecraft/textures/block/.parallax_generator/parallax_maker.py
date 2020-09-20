@@ -1,42 +1,15 @@
 import os
 import shutil
-import sys
-import traceback
+from typing import Optional
 
 from PIL import Image
 
-# Скрипт ищет в папке карты нормалей (файлы с окончанием _n) и
+# Скрипт ищет в папке карты нормалей (файлы с окончанием _n) и 
 # генерирует для них параллакс путём изменения альфы в зависимости
 # от синего канала. Старые файлы бэкапит в ./.normalmaps_backup
 
-DIRPATH = os.path.dirname(os.path.abspath(__file__))
-BACKUP_DIR = os.path.join(DIRPATH, ".normalmaps_backup")
 
-
-def backup(path: str) -> str:
-    """ Бэкапит картинку в ./.normalmaps_backup
-
-        Если папки нет, она будет создана
-
-        `path` - путь к картинке.
-
-        Возвращает путь к бэкапу."""
-
-    if not os.path.exists(BACKUP_DIR):
-        print("Making dir", BACKUP_DIR)
-        os.mkdir(BACKUP_DIR)
-
-    dst = os.path.join(BACKUP_DIR, os.path.basename(path))
-    shutil.copy(path, dst)
-    return dst
-
-
-def _generate_parallax(img, strength: float):
-    """ Создаёт параллакс для карты нормалей на
-        основе синего канала 
-        
-        `img` - картинка PIL.Image  
-        `strength` - множитель глубины"""
+def generate_parallax(img):
     new_data = []
     img = img.convert("RGBA")
     for px in list(img.getdata()):
@@ -45,44 +18,31 @@ def _generate_parallax(img, strength: float):
         #     print("Parallax already generated.")
         #     return None
         px = list(px)
-        # multiplyed = px[2] * strength
-
-        # shifted = (px[2]-multiplyed)+multiplyed
-
-        diff = 255-px[2]
-
-        px = [px[0], px[1], px[2], int(255-(diff*strength))]
+        px = [px[0], px[1], px[2], px[2]]
         new_data.append(tuple(px))
 
     img.putdata(new_data)
     return img
 
 
-def generate_parallax(path: str, strength: float = 1.0):
-    """ Создаёт параллакс для карты нормалей на
-        основе синего канала
+dirpath = os.path.dirname(os.path.abspath(__file__))
+backup_dir = os.path.join(dirpath, ".normalmaps_backup")
 
-        `path` - путь к картинке  
-        `strength` - множитель глубины"""
-    backup(path)
-    img = Image.open(path)
-    img = _generate_parallax(img, strength)
-    img.save(path)
+if not os.path.exists(backup_dir):
+    print("Making dir", backup_dir)
+    os.mkdir(backup_dir)
 
-
-try: 
-    if len(sys.argv) > 1:
-        for arg in sys.argv[1:]:
-            s = input(os.path.basename(arg) + " parallax strength > ")
-            generate_parallax(arg, float(s))
-    else:
-        while True:
-            generate_parallax(input("path > "),
-                              float(input("parallax strength > ")))
-except KeyboardInterrupt:
-    quit()
-except:
-    print(traceback.format_exc())
-
+for fn in os.listdir(dirpath):
+    if fn.endswith("_n.png"):
+        imgpath = os.path.join(dirpath, fn)
+        print("Generating parallax for", imgpath)
+        img = Image.open(imgpath)
+        img.convert("RGBA")
+        img = generate_parallax(img)
+        if img is not None:
+            shutil.copy(imgpath, os.path.join(backup_dir, fn))
+            print("Creating a backup of", fn)
+            img.save(os.path.join(dirpath, fn))
+            print("Generated parallax for", fn)
 
 input("done")

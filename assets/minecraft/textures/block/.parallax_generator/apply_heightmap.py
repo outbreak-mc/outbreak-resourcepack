@@ -1,11 +1,17 @@
 import sys
 import os
-import traceback
 from PIL import Image
+import traceback
+
+# В скрипт через первый аргумент (drag&drop файла на скрипт в Windows)
+# передаётся путь к файлу с _n в названии. Скрипт ищет файл с похожим
+# названием, но оканчивающийся на _h. Файл, оканчивающийся на _h должен
+# быть чёрно-белой картой высот.
+# Скрипт делает картинке с _n в названии прозрачность в соответствии
+# с картой высот.
 
 
-def apply_heightmap(nm_path: str, hm_path: str, strength: float,
-                    out_path: str):
+def apply_heightmap(nm_path: str, hm_path: str):
     new_data = []
 
     nm_img = Image.open(nm_path)
@@ -22,34 +28,23 @@ def apply_heightmap(nm_path: str, hm_path: str, strength: float,
     for num, px in enumerate(list(nm_data)):
         px = list(px)
         hm_px = hm_data[num]
-
+        # print(hm_avg)
+        # print(hm_px)
         avg = int((hm_px[0]+hm_px[1]+hm_px[2])/3)
 
-        diff = 255-avg
-
-        px = [px[0], px[1], px[2], int(255-(diff*strength))]
+        px = [px[0], px[1], px[2], avg]
         new_data.append(tuple(px))
 
     nm_img.putdata(new_data)
 
-    filename = os.path.basename(nm_path)
-
-    if out_path == "":
-        out_path = os.path.join(".", filename)
-    elif os.path.isdir(out_path):
-        out_path = os.path.join(out_path, filename)
-
-    nm_img.save(out_path)
-
+    nm_img.save(nm_path)
 
 
 try:
     apply_heightmap(
-        input("normal map path > "),
-        input("grayscale height map path > "),
-        float(input("strength (0.0 - 1.0) > ")),
-        input("out path > ")
+        input("Normal map > "),
+        input("Height map > ")
     )
-except:
+except Exception as e:
     traceback.print_exc()
     input()
